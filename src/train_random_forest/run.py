@@ -98,7 +98,7 @@ def go(args):
     # HINT: use mlflow.sklearn.save_model
     mlflow.sklearn.save_model(
         sk_pipe,
-        path=os.getcwd(),
+        path='random_forest_dir',
         #serialization_flow=mlflow.sklearn.SERIALIZATION_FORMAT_CLOUDPICKLE,
         input_example = X_train.iloc[:5]
     )
@@ -166,7 +166,7 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     # 1 - A SimpleImputer(strategy="most_frequent") to impute missing values
     # 2 - A OneHotEncoder() step to encode the variable
     non_ordinal_categorical_preproc = make_pipeline(
-        SimpleImputer(strategy="most frequent"), OneHotEncoder()
+        SimpleImputer(strategy="most_frequent"), OneHotEncoder()
     )
     ######################################
 
