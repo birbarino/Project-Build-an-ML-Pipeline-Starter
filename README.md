@@ -1,4 +1,5 @@
 W&B Project: https://wandb.ai/ethnsyrs-wgu/nyc_airbnb
+Like to this GitHub: https://github.com/birbarino/Project-Build-an-ML-Pipeline-Starter
 
 ----
 
